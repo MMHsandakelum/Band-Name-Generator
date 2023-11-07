@@ -13,8 +13,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  let adjnum = Math.floor(Math.random() * adj.length) + 1;
-  let nounnum = Math.floor(Math.random() * adj.length) + 1;
+  let adjnum = Math.floor(Math.random() * adj.length);
+  let nounnum = Math.floor(Math.random() * adj.length);
 
   let bandName = adj[adjnum] + " " + noun[nounnum];
 
